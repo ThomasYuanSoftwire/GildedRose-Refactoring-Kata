@@ -28,7 +28,8 @@ class GildedRoseTests: XCTestCase {
     }
     
     func testQualityMaximum50() throws{
-        let items = [Item(name: "Aged Brie", sellIn: 10, quality: 50), Item(name: "foo", sellIn: 10, quality: 50), Item(name: "Conjured item", sellIn: 10, quality: 50), Item(name: "Backstage", sellIn: 10, quality: 50)]
+        let items = [Item(name: "Aged Brie", sellIn: 10, quality: 50), Item(name: "foo", sellIn: 10, quality: 50),
+                     Item(name: "Conjured item", sellIn: 10, quality: 50), Item(name: "Backstage", sellIn: 10, quality: 50)]
         let app = GildedRose(items: items)
         app.updateQuality()
         var allTrue = true
@@ -40,7 +41,8 @@ class GildedRoseTests: XCTestCase {
         XCTAssert(allTrue)
     }
     func testQualityMinimum0() throws{
-        let items = [Item(name: "Aged Brie", sellIn: 10, quality: 0), Item(name: "foo", sellIn: 10, quality: 0), Item(name: "Conjured item", sellIn: 10, quality: 0), Item(name: "Backstage", sellIn: 10, quality: 0)]
+        let items = [Item(name: "Aged Brie", sellIn: 10, quality: 0), Item(name: "foo", sellIn: 10, quality: 0),
+                     Item(name: "Conjured item", sellIn: 10, quality: 0), Item(name: "Backstage", sellIn: 10, quality: 0)]
         let app = GildedRose(items: items)
         app.updateQuality()
         var allTrue = true
